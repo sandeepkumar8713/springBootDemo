@@ -15,6 +15,12 @@ HTTP GET : http://localhost:8090/consumeRest
 ./gradlew clean build
 ```
 
+## Swagger Links
+
+UI: http://localhost:8090/swagger-ui.html
+Json: http://localhost:8090/v3/api-docs
+Yaml: http://localhost:8090/v3/api-docs.yaml
+
 **Examples** : 
 1. [Employee Payroll](https://spring.io/guides/tutorials/rest/)
 2. [Junit test case](https://www.baeldung.com/junit-5-gradle)
@@ -22,6 +28,8 @@ HTTP GET : http://localhost:8090/consumeRest
 3. https://spring.io/guides/gs/spring-boot/
 4. https://codecrunch.org/creating-a-post-and-get-request-springboot-ff6e82a5d46b?gi=1194f3074b6b
 5. https://docs.spring.io/spring-boot/docs/1.5.7.RELEASE/reference/html/boot-features-testing.html
+6. https://stackoverflow.com/questions/50618350/swagger-with-spring-boot-2-0-leads-to-404-error-page/68290972#68290972
+7. [Swagger] (https://www.baeldung.com/spring-rest-openapi-documentation)
 
 
 ## Quick Links 
