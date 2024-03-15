@@ -1,5 +1,7 @@
 package com.example.springBootDemo;
 
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mockito;
@@ -10,7 +12,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import static org.mockito.Mockito.mock;
+import static org.mockito.ArgumentMatchers.any;
 
 
 @SpringBootTest
@@ -21,12 +23,14 @@ public class ValidatorTest {
     @MockBean
     Validator validator;
 
+    @BeforeEach
+    public void setup(){
+        Mockito.when(validator.checking(any(String.class))).thenReturn("Mocking method");
+    }
+
     @Test
     public void testMock(){
-
-        Mockito.when(validator.checking("jh")).thenReturn("Mocking method");
-
-        String result = validator.checking("jh");
+        String result = validator.checking("sample");
 
         logger.info("Result : " + result);
         assert result.equals("Mocking method");
