@@ -27,6 +27,6 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
-//test {
-//	testLogging.showStandardStreams = true
-//}
+test {
+	testLogging.showStandardStreams = false // Unable to debug test case issues
+}
