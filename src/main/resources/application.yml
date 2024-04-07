@@ -1,0 +1,34 @@
+server:
+  port: 8090
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info, health, logger, mappings
+
+  info:
+    env:
+      enabled:
+        true
+      git:
+        enabled:
+          false
+      build:
+        enabled:
+          false
+
+  health:
+    env:
+      enabled:
+        true
+
+info:
+  app: ${rootProject.name}
+  name: Spring Boot Demo
+  version : ${project.version}
+
+health:
+  name: Spring Boot Demo
+  status: UP
+  statusCode: 200

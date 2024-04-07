@@ -24,6 +24,11 @@
     Json: http://localhost:8090/v3/api-docs
     Yaml: http://localhost:8090/v3/api-docs.yaml
 
+## Actuator APIs
+
+    Info : http://localhost:8090/actuator/info
+    Health : http://localhost:8090/actuator/health
+
 ## Examples 
 1. [Employee Payroll](https://spring.io/guides/tutorials/rest/)
 2. [Junit test case](https://www.baeldung.com/junit-5-gradle)
@@ -59,3 +64,4 @@ curl -X DELETE localhost:8090/employees/3
 **Note** : This application uses H2 database which is an in-memory database to save employee details.
 
 Banner creation : https://patorjk.com/software/taag/#p=display&f=Big&t=SpringBootDemo
+Enabling actuator : https://medium.com/@TimvanBaarsen/help-my-spring-boot-info-actuator-endpoint-is-enabled-but-i-dont-see-any-environment-details-c2d41a7b24d7
